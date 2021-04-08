@@ -10,8 +10,8 @@
  *
  */
 function deleteDigit(n) {
- const arr = n.toString().split('');
- const min = Math.min.apply(0, arr).toString();
+  const arr = n.toString().split('');
+  const min = Math.min.apply(0, arr).toString();
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === min) {
       arr.splice([i], 1);
